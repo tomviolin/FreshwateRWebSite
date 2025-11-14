@@ -24,6 +24,12 @@
         background-size: auto 211px;
         background-position: top left;
       }
+      div.col {
+        width:50%;
+        min-width:250px;
+        display: inline-block;
+        text-align: center;
+      }
     </style>
     <!-- QR CODE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -38,14 +44,26 @@
         <h2>Unit 1: Google Colab</h2>
       </div>
       <div class="colbody">
-        <a href="https://colab.research.google.com/#create=true&language=r">SUPER QUICK START</a>
-        <div id="qrcode"></div>
+        <a href="https://colab.research.google.com/#create=true&language=r">Link Directly to Colab R</a>
         <script type="text/javascript">
           new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
         </script>
       </div> <!-- end colbody -->
     </div> <!-- end col1 -->
     <div class="col col2">
+      <h2>Unit 2: RStudio</h2>
+      <h3>Step 1: Install R</h3>
+      <a href="boom">Download R</a>
+      <script>
+          new QRCode(document.getElementById("qrcode"), "boom");
+      </script>
+      <br>
+      <h3>Step 2: Install RStudio</h3>
+      <a href="boom">Download R</a>
+      <script>
+          new QRCode(document.getElementById("qrcode"), "boom");
+      </script>
+      
     </div> <!-- end col2 -->      
   </body>
 </html>
