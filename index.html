@@ -37,8 +37,13 @@
         width:45%;
         min-width:250px;
         
-        display: inline-block;
         text-align: center;
+      }
+       /* Media query for narrow screens */
+      @media (max-width: 500px) { /* Adjust breakpoint as needed */
+        .container {
+          flex-direction: column; /* Stacks columns vertically on narrow screens */
+        }
       }
     </style>
     <!-- QR CODE -->
