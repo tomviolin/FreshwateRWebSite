@@ -25,6 +25,10 @@
         background-size: auto 211px;
         background-position: top left;
       }
+      div.container {
+        width: 100%;
+        margin:0;
+      }
       div.col {
         width:45%;
         min-width:250px;
@@ -41,32 +45,34 @@
       
     </div>
     <h1><b>Freshwate<span style="color:blue;">R</span></b></h1>
-    <div class="col col1">
-      <div class="colhead">
-        <h2>Unit 1: Google Colab</h2>
-      </div>
-      <div class="colbody">
-        <a href="https://colab.research.google.com/#create=true&language=r">Link Directly to Colab R</a>
-        <script type="text/javascript">
-          new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
+    <div class=""container">
+      <div class="col col1">
+        <div class="colhead">
+          <h2>Unit 1: Google Colab</h2>
+        </div>
+        <div class="colbody">
+          <a href="https://colab.research.google.com/#create=true&language=r">Link Directly to Colab R</a>
+          <script type="text/javascript">
+            new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
+          </script>
+        </div> <!-- end colbody -->
+      </div> <!-- end col1 -->
+      <div class="col col2">
+        <h2>Unit 2: RStudio</h2>
+        <h3>Step 1: Install R</h3>
+        <a href="boom">Download R</a>
+        <script>
+            new QRCode(document.getElementById("qrcode"), "boom");
         </script>
-      </div> <!-- end colbody -->
-    </div> <!-- end col1 -->
-    <div class="col col2">
-      <h2>Unit 2: RStudio</h2>
-      <h3>Step 1: Install R</h3>
-      <a href="boom">Download R</a>
-      <script>
-          new QRCode(document.getElementById("qrcode"), "boom");
-      </script>
-      <br>
-      <h3>Step 2: Install RStudio</h3>
-      <a href="boom">Download R</a>
-      <script>
-          new QRCode(document.getElementById("qrcode"), "boom");
-      </script>
-      
-    </div> <!-- end col2 -->      
+        <br>
+        <h3>Step 2: Install RStudio</h3>
+        <a href="boom">Download R</a>
+        <script>
+            new QRCode(document.getElementById("qrcode"), "boom");
+        </script>
+        
+      </div> <!-- end col2 -->  
+    </div> <!-- end container--> 
   </body>
 </html>
 
