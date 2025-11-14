@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style type="text/css>">
+      @font-face {
+        font-family: "MyCustomFont"; /* Choose a name for your font */
+        src: url("woff/3270NerdFontMono-Regular.woff2") format("woff2"); /* Path to your WOFF2 file */
+        font-weight: normal; /* Define the weight (e.g., normal, bold, 400, 700) */
+        font-style: normal; /* Define the style (e.g., normal, italic) */
+        /* Optional: Add other formats for broader browser support */
+      }
+    </style>
     <!-- QR CODE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   </head>
@@ -14,15 +23,11 @@
         <h2>Unit 1: Google Colab</h2>
       </div>
       <div class="colbody">
-        <ol>
-          <li>
-            <a href="https://colab.research.google.com/#create=true&language=r">SUPER QUICK START</a>
-            <div id="qrcode"></div>
-            <script type="text/javascript">
-              new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
-            </script>
-          </li>
-        </ol>
+        <a href="https://colab.research.google.com/#create=true&language=r">SUPER QUICK START</a>
+        <div id="qrcode"></div>
+        <script type="text/javascript">
+          new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
+        </script>
       </div> <!-- end colbody -->
     </div> <!-- end col1 -->
     <div class="col col2">
