@@ -3,19 +3,30 @@
   <head>
     <!-- QR CODE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-</head>
-<body>
-  <img src="sfsheader.png"><br clear="all">
-  <h1><b>Freshwate<span style="color:blue;">R</span></b></h1>
-  <ol>
-    <li>
-      <a href="https://colab.research.google.com/#create=true&language=r">SUPER QUICK START</a>
-      <div id="qrcode"></div>
-      <script type="text/javascript">
-        new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
-      </script>
-    </li>
-  </ol>
-</body>
+  </head>
+  <body>
+    <div class="header">
+      <img src="sfsheader.png">
+      <h1><b>Freshwate<span style="color:blue;">R</span></b></h1>
+    </div>
+    <div class="col col1">
+      <div class="colhead">
+        <h2>Unit 1: Google Colab</h2>
+      </div>
+      <div class="colbody">
+        <ol>
+          <li>
+            <a href="https://colab.research.google.com/#create=true&language=r">SUPER QUICK START</a>
+            <div id="qrcode"></div>
+            <script type="text/javascript">
+              new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
+            </script>
+          </li>
+        </ol>
+      </div> <!-- end colbody -->
+    </div> <!-- end col1 -->
+    <div class="col col2">
+    </div> <!-- end col2 -->      
+  </body>
 </html>
 
